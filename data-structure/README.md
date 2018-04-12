@@ -1,6 +1,7 @@
 # JavaScript Data Structures
 
 - [Map](map.js)
+- [Set](set.js)
 
 ## References
 
