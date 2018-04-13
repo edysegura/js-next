@@ -1,13 +1,18 @@
-function *combos(list) {
-  const n = list.length;
-  for (let i = 0; i < n - 1; i++) {
-      for (let j = i + 1; j < n; j++) {
-          yield [list[i], list[j]];
-      }
+'use strict'
+
+function* fibonacciSequence(n) {
+  for (let a = 0, b = 1;;) {
+    yield a
+    const c = a + b
+    a = b
+    b = c
   }
 }
 
-const iterable = combos(['a', 'b', 'c', 'd']);
-for (const value of iterable) {
-  console.log(value);
+function fibonacci(n) {
+  for (const value of fibonacciSequence()) {
+    if (n-- === 0) return value
+  }
 }
+
+console.log('fibonacci(12): ', fibonacci(12))
