@@ -1,8 +1,16 @@
-const person = {
+'use strict'
+
+const onePerson = {
   firstName: 'Edy',
   lastName: 'Segura'
 }
 
-const showName = ({ firstName:name = 'no-name' }) => console.log(name)
+const anotherPerson = {
+  lastName: 'Segura'
+}
 
-showName(person)
+const showName = ({ firstName:name = 'No name' }) =>
+  console.log(name)
+
+showName(onePerson) // Edy
+showName(anotherPerson) // No name
