@@ -4,6 +4,8 @@ This repo is my playground to test the JavaScript new features
 
 ## Examples
 
+- [Data Structure](data-structure)
+- [Destructuring Assignment](destructuring-assignment)
 - [Iterators and Generators](iterators-generators/index.js)
 
 ---
