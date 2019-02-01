@@ -4,8 +4,7 @@ function* fibonacciSequence(n) {
   for (let a = 0, b = 1;;) {
     yield a
     const c = a + b
-    a = b
-    b = c
+    ;[a, b] = [b, a]
   }
 }
 
