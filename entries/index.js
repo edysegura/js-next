@@ -6,4 +6,4 @@ const myObject = {
 }
 
 const entries = Object.entries(myObject)
-console.log(entries)
+console.log(entries) // [ [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ], [ 'd', 4 ] ]
