@@ -6,4 +6,4 @@ const myObject = {
 }
 
 const keys = Object.keys(myObject)
-console.log(keys) // [ 1, 2, 3, 4 ]
+console.log(keys) // [ 'a', 'b', 'c', 'd' ]
