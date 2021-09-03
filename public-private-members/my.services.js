@@ -14,5 +14,5 @@ class MyService {
 }
 
 const service = new MyService()
-console.log(service.myPublicMember)
-console.log(service.myPrivateMember)
+console.log(service.myPublicMember) // this is public
+console.log(service.myPrivateMember) // undefined
